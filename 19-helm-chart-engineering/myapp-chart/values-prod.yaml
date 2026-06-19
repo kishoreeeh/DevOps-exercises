@@ -1,0 +1,9 @@
+replicaCount: 4
+
+config:
+  APP_ENV: prod
+
+autoscaling:
+  enabled: true
+  minReplicas: 4
+  maxReplicas: 10
