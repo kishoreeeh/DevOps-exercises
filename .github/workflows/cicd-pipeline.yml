@@ -20,12 +20,12 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        cd app
+        cd 23-build-cicd-pipeline/app
         pip install -r requirements.txt
 
     - name: Run Unit Tests
       run: |
-        cd app
+        cd 23-build-cicd-pipeline/app
         pytest
 
   security-scan:
@@ -52,5 +52,5 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        cd app
+        cd 23-build-cicd-pipeline/app
         docker build -t cicd-demo:v1 .
